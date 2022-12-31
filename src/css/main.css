@@ -1,0 +1,46 @@
+@import './base.css';
+
+body {
+	background-color: #9b99ff;
+	background-size: 200% 200%;
+	background-image:
+		radial-gradient(at 9% 33%, hsla(352, 74%, 73%, 1) 0px, transparent 50%),
+		radial-gradient(at 44% 65%, hsla(280, 96%, 71%, 1) 0px, transparent 50%),
+		radial-gradient(at 22% 64%, hsla(133, 62%, 67%, 1) 0px, transparent 50%),
+		radial-gradient(at 98% 63%, hsla(355, 90%, 68%, 1) 0px, transparent 50%),
+		radial-gradient(at 1% 44%, hsla(229, 91%, 65%, 1) 0px, transparent 50%),
+		radial-gradient(at 89% 63%, hsla(12, 76%, 75%, 1) 0px, transparent 50%),
+		radial-gradient(at 94% 64%, hsla(156, 98%, 67%, 1) 0px, transparent 50%);
+	animation: gradient 15s infinite;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-size: 15px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: flex;
+	height: 95vh;
+	width: 95vw;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+
+	50% {
+		background-position: 100%;
+	}
+
+	100% {
+		background-position: 0%
+	}
+}
+
+#app {
+	width: inherit;
+	height: inherit;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+}

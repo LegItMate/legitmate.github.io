@@ -1,0 +1,53 @@
+:root {
+    --white: #ffffff;
+    --white-soft: #f8f8f8;
+    --white-mute: #f2f2f2;
+    --plum: #DDA0DD;
+
+    --black: #181818;
+    --black-soft: #222222;
+    --black-mute: #282828;
+
+    --indigo: #2c3e50;
+    --purple: #6600cc;
+    --purple-soft: #9900cc;
+    --blue: #0000FF;
+    --blue-soft: #3333cc;
+
+    --divider-light-1: rgba(60, 60, 60, 0.29);
+    --divider-light-2: rgba(60, 60, 60, 0.12);
+    --divider-dark-1: rgba(84, 84, 84, 0.65);
+    --divider-dark-2: rgba(84, 84, 84, 0.48);
+
+    --text-light-1: var(--indigo);
+    --text-light-2: rgba(60, 60, 60, 0.66);
+    --text-dark-1: var(--white);
+    --text-dark-2: rgba(235, 235, 235, 0.64);
+
+
+    --yellow: #FFFF00;
+    --red: #FF0000;
+    --orange: #FFA500;
+    --lime: #00FF00;
+    --green: var(--lime);
+
+    --primary-color: var(--purple);
+    --primary-color-soft: var(--purple-soft);
+    --primary-color-mute: var();
+    --secondary-color: var(--yellow);
+    --bg-grad-1: var(--primary-color);
+    --bg-grad-2: var(--orange);
+    --bg-grad-3: var(--yellow);
+
+    --color-background: var(--primary-color);
+    --color-background-soft: var(--primary-color-soft);
+    --color-background-mute: var(--primary-color-mute);
+
+    --color-border: var(--black);
+    --color-border-hover: var(--divider-light-1);
+
+    --color-heading: var(--text-light-1);
+    --color-text: var(--black);
+
+    --section-gap: 50vw;
+}
