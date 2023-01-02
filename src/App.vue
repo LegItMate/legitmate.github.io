@@ -11,15 +11,15 @@
 			<img alt="pfp" class="logo" src="./assets/pfp.png" />
 			<div class="socials">
 				<a href="https://github.com/LegItMate" class="social" target="_blank">
-					<img src="./assets/github.svg" />
+					<img src="./assets/github.svg" alt="github" />
 					<span>LegItMate</span>
 				</a>
 				<a href="https://discord.com/app" class="social" target="_blank">
-					<img src="./assets/discord.svg" />
+					<img src="./assets/discord.svg" alt="discord" />
 					<span>LegItMate#6667</span>
 				</a>
 				<a href="https://twitter.com/" class="social" target="_blank">
-					<img src="./assets/twitter.svg" />
+					<img src="./assets/twitter.svg" alt="twitter" />
 					<span>Soon</span>
 				</a>
 			</div>
@@ -36,23 +36,45 @@
 	justify-content: space-between;
 }
 
-@media (min-width: 1024px) {
-	.home {
-		height: 65%;
-	}
-
+@media (min-width: 768px) {
 	.social:hover span {
 		opacity: 1;
 		width: 180px;
 	}
 }
 
-@media (min-height: 900px) {
+@media (min-height: 1024px) {
+	.home {
+		height: 65%;
+	}
+}
+
+@media (max-height: 1023px) {
 	.home {
 		height: 50%;
 	}
+}
+
+@media (max-width: 768px) {
+	.social {
+		width: min-content;
+	}
+
+	.social span {
+		display: none !important;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
 	.social span {
 		opacity: 1 !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.logo {
+		width: 150px !important;
+		height: 150px !important;
 	}
 }
 
@@ -71,12 +93,8 @@
 	margin-top: 2rem;
 }
 
-.navbar a.router-link-exact-active {
-	background-color: transparent;
-}
-
-.navbar a:not(.router-link-exact-active):hover {
-	color: hsla(160, 100%, 37%, 1);
+.navbar a:hover {
+	color: var(--blue-soft);
 }
 
 .navbar a {
@@ -91,10 +109,11 @@
 .main {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .socials {
-	margin-top: 15px;
 	height: 150px;
 	justify-content: space-evenly;
 	min-width: 40px;
@@ -106,11 +125,11 @@
 }
 
 .social {
+	cursor: default;
 	display: flex;
 	flex-direction: row;
 	min-width: 50px;
 	margin-bottom: 5px;
-	text-decoration: none;
 	color: var(--color-text);
 }
 
